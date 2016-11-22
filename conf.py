@@ -353,5 +353,5 @@ intersphinx_mapping = {
     }
 
 cfy_blueprint_paths = [
-        '../manager/resources/rest-service/cloudify/types/types.yaml',
+        'types.yaml',
         ]
