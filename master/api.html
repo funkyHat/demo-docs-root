@@ -1,0 +1,585 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>REST API &#8212; Cloudify 4.0-alpha1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/banner.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '4.0-alpha1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="Cloudify 4.0-alpha1 documentation" href="index.html" />
+    <link rel="prev" title="Built-in Relationships" href="relationships.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="rest-api">
+<h1>REST API<a class="headerlink" href="#rest-api" title="Permalink to this headline">¶</a></h1>
+<dl class="post">
+<dt id="post--api-v2.1-evaluate-functions">
+<code class="descname">POST </code><code class="descname">/api/v2.1/evaluate/functions</code><a class="headerlink" href="#post--api-v2.1-evaluate-functions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate intrinsic in payload</p>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--api-v2.1-provider-context">
+<code class="descname">POST </code><code class="descname">/api/v2.1/provider/context</code><a class="headerlink" href="#post--api-v2.1-provider-context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create provider context</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2.1-provider-context">
+<code class="descname">GET </code><code class="descname">/api/v2.1/provider/context</code><a class="headerlink" href="#get--api-v2.1-provider-context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get provider context</p>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--api-v1-evaluate-functions">
+<code class="descname">POST </code><code class="descname">/api/v1/evaluate/functions</code><a class="headerlink" href="#post--api-v1-evaluate-functions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate intrinsic in payload</p>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--api-v2-evaluate-functions">
+<code class="descname">POST </code><code class="descname">/api/v2/evaluate/functions</code><a class="headerlink" href="#post--api-v2-evaluate-functions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate intrinsic in payload</p>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--api-v1-provider-context">
+<code class="descname">POST </code><code class="descname">/api/v1/provider/context</code><a class="headerlink" href="#post--api-v1-provider-context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create provider context</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v1-provider-context">
+<code class="descname">GET </code><code class="descname">/api/v1/provider/context</code><a class="headerlink" href="#get--api-v1-provider-context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get provider context</p>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--api-v2-provider-context">
+<code class="descname">POST </code><code class="descname">/api/v2/provider/context</code><a class="headerlink" href="#post--api-v2-provider-context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create provider context</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2-provider-context">
+<code class="descname">GET </code><code class="descname">/api/v2/provider/context</code><a class="headerlink" href="#get--api-v2-provider-context" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get provider context</p>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--api-v2.1-executions">
+<code class="descname">POST </code><code class="descname">/api/v2.1/executions</code><a class="headerlink" href="#post--api-v2.1-executions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute a workflow</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2.1-version">
+<code class="descname">GET </code><code class="descname">/api/v2.1/version</code><a class="headerlink" href="#get--api-v2.1-version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get version information</p>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--api-v2.1-plugins">
+<code class="descname">POST </code><code class="descname">/api/v2.1/plugins</code><a class="headerlink" href="#post--api-v2.1-plugins" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upload a plugin</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2.1-status">
+<code class="descname">GET </code><code class="descname">/api/v2.1/status</code><a class="headerlink" href="#get--api-v2.1-status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the status of running system services</p>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--api-v2.1-search">
+<code class="descname">POST </code><code class="descname">/api/v2.1/search</code><a class="headerlink" href="#post--api-v2.1-search" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search using an Elasticsearch query</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2.1-tokens">
+<code class="descname">GET </code><code class="descname">/api/v2.1/tokens</code><a class="headerlink" href="#get--api-v2.1-tokens" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get authentication token</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v1-node-instances">
+<code class="descname">GET </code><code class="descname">/api/v1/node-instances</code><a class="headerlink" href="#get--api-v1-node-instances" title="Permalink to this definition">¶</a></dt>
+<dd><p>List node instances</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v1-deployments">
+<code class="descname">GET </code><code class="descname">/api/v1/deployments</code><a class="headerlink" href="#get--api-v1-deployments" title="Permalink to this definition">¶</a></dt>
+<dd><p>List deployments</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v1-blueprints">
+<code class="descname">GET </code><code class="descname">/api/v1/blueprints</code><a class="headerlink" href="#get--api-v1-blueprints" title="Permalink to this definition">¶</a></dt>
+<dd><p>List uploaded blueprints</p>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--api-v1-executions">
+<code class="descname">POST </code><code class="descname">/api/v1/executions</code><a class="headerlink" href="#post--api-v1-executions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute a workflow</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v1-executions">
+<code class="descname">GET </code><code class="descname">/api/v1/executions</code><a class="headerlink" href="#get--api-v1-executions" title="Permalink to this definition">¶</a></dt>
+<dd><p>List executions</p>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--api-v2-executions">
+<code class="descname">POST </code><code class="descname">/api/v2/executions</code><a class="headerlink" href="#post--api-v2-executions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute a workflow</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v1-version">
+<code class="descname">GET </code><code class="descname">/api/v1/version</code><a class="headerlink" href="#get--api-v1-version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get version information</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2-version">
+<code class="descname">GET </code><code class="descname">/api/v2/version</code><a class="headerlink" href="#get--api-v2-version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get version information</p>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--api-v2-plugins">
+<code class="descname">POST </code><code class="descname">/api/v2/plugins</code><a class="headerlink" href="#post--api-v2-plugins" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upload a plugin</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v1-status">
+<code class="descname">GET </code><code class="descname">/api/v1/status</code><a class="headerlink" href="#get--api-v1-status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the status of running system services</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2-status">
+<code class="descname">GET </code><code class="descname">/api/v2/status</code><a class="headerlink" href="#get--api-v2-status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the status of running system services</p>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--api-v1-search">
+<code class="descname">POST </code><code class="descname">/api/v1/search</code><a class="headerlink" href="#post--api-v1-search" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search using an Elasticsearch query</p>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--api-v2-search">
+<code class="descname">POST </code><code class="descname">/api/v2/search</code><a class="headerlink" href="#post--api-v2-search" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search using an Elasticsearch query</p>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--api-v1-events">
+<code class="descname">POST </code><code class="descname">/api/v1/events</code><a class="headerlink" href="#post--api-v1-events" title="Permalink to this definition">¶</a></dt>
+<dd><p>List events for the provided Elasticsearch query</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v1-events">
+<code class="descname">GET </code><code class="descname">/api/v1/events</code><a class="headerlink" href="#get--api-v1-events" title="Permalink to this definition">¶</a></dt>
+<dd><p>List events for the provided Elasticsearch query</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v1-tokens">
+<code class="descname">GET </code><code class="descname">/api/v1/tokens</code><a class="headerlink" href="#get--api-v1-tokens" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get authentication token</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2-tokens">
+<code class="descname">GET </code><code class="descname">/api/v2/tokens</code><a class="headerlink" href="#get--api-v2-tokens" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get authentication token</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v1-nodes">
+<code class="descname">GET </code><code class="descname">/api/v1/nodes</code><a class="headerlink" href="#get--api-v1-nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>List nodes</p>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--api-v2.1-deployment-updates-(string-id)-update-(string-phase)">
+<code class="descname">POST </code><code class="descname">/api/v2.1/deployment-updates/</code><span class="sig-paren">(</span><em class="property">string: </em><em>id</em><span class="sig-paren">)</span><code class="descname">/update/</code><span class="sig-paren">(</span><em class="property">string: </em><em>phase</em><span class="sig-paren">)</span><a class="headerlink" href="#post--api-v2.1-deployment-updates-(string-id)-update-(string-phase)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provides support for two phases of deployment update. The phase is
+chosen according to the phase arg, and the id is used by this step.</p>
+<p>In the first phase the deployment update is
+1. Staged (from a new blueprint)
+2. The steps are extracted and saved onto the data model.
+3. The data storage is manipulated according to the
+addition/modification steps.
+4. The update workflow is run, executing any lifecycles of add/removed
+nodes or relationships.</p>
+<p>The second step finalizes the commit by manipulating the data model
+according to any removal steps.</p>
+<p>In order
+:param id: for the initiate step it&#8217;s the deployment_id, and for the
+finalize step it&#8217;s the update_id
+:param phase: initiate or finalize
+:return: update response</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2.1-deployments-(string-deployment_id)-outputs">
+<code class="descname">GET </code><code class="descname">/api/v2.1/deployments/</code><span class="sig-paren">(</span><em class="property">string: </em><em>deployment_id</em><span class="sig-paren">)</span><code class="descname">/outputs</code><a class="headerlink" href="#get--api-v2.1-deployments-(string-deployment_id)-outputs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get deployment outputs</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2.1-blueprints-(string-blueprint_id)-archive">
+<code class="descname">GET </code><code class="descname">/api/v2.1/blueprints/</code><span class="sig-paren">(</span><em class="property">string: </em><em>blueprint_id</em><span class="sig-paren">)</span><code class="descname">/archive</code><a class="headerlink" href="#get--api-v2.1-blueprints-(string-blueprint_id)-archive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Download blueprint&#8217;s archive</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2.1-plugins-(string-plugin_id)-archive">
+<code class="descname">GET </code><code class="descname">/api/v2.1/plugins/</code><span class="sig-paren">(</span><em class="property">string: </em><em>plugin_id</em><span class="sig-paren">)</span><code class="descname">/archive</code><a class="headerlink" href="#get--api-v2.1-plugins-(string-plugin_id)-archive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Download plugin archive</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v1-deployments-(string-deployment_id)-outputs">
+<code class="descname">GET </code><code class="descname">/api/v1/deployments/</code><span class="sig-paren">(</span><em class="property">string: </em><em>deployment_id</em><span class="sig-paren">)</span><code class="descname">/outputs</code><a class="headerlink" href="#get--api-v1-deployments-(string-deployment_id)-outputs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get deployment outputs</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2-deployments-(string-deployment_id)-outputs">
+<code class="descname">GET </code><code class="descname">/api/v2/deployments/</code><span class="sig-paren">(</span><em class="property">string: </em><em>deployment_id</em><span class="sig-paren">)</span><code class="descname">/outputs</code><a class="headerlink" href="#get--api-v2-deployments-(string-deployment_id)-outputs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get deployment outputs</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v1-blueprints-(string-blueprint_id)-archive">
+<code class="descname">GET </code><code class="descname">/api/v1/blueprints/</code><span class="sig-paren">(</span><em class="property">string: </em><em>blueprint_id</em><span class="sig-paren">)</span><code class="descname">/archive</code><a class="headerlink" href="#get--api-v1-blueprints-(string-blueprint_id)-archive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Download blueprint&#8217;s archive</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2-blueprints-(string-blueprint_id)-archive">
+<code class="descname">GET </code><code class="descname">/api/v2/blueprints/</code><span class="sig-paren">(</span><em class="property">string: </em><em>blueprint_id</em><span class="sig-paren">)</span><code class="descname">/archive</code><a class="headerlink" href="#get--api-v2-blueprints-(string-blueprint_id)-archive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Download blueprint&#8217;s archive</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2-plugins-(string-plugin_id)-archive">
+<code class="descname">GET </code><code class="descname">/api/v2/plugins/</code><span class="sig-paren">(</span><em class="property">string: </em><em>plugin_id</em><span class="sig-paren">)</span><code class="descname">/archive</code><a class="headerlink" href="#get--api-v2-plugins-(string-plugin_id)-archive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Download plugin archive</p>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--api-v2.1-executions-(string-execution_id)">
+<code class="descname">POST </code><code class="descname">/api/v2.1/executions/</code><span class="sig-paren">(</span><em class="property">string: </em><em>execution_id</em><span class="sig-paren">)</span><a class="headerlink" href="#post--api-v2.1-executions-(string-execution_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply execution action (cancel, force-cancel) by id</p>
+</dd></dl>
+
+<dl class="patch">
+<dt id="patch--api-v2.1-executions-(string-execution_id)">
+<code class="descname">PATCH </code><code class="descname">/api/v2.1/executions/</code><span class="sig-paren">(</span><em class="property">string: </em><em>execution_id</em><span class="sig-paren">)</span><a class="headerlink" href="#patch--api-v2.1-executions-(string-execution_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update execution status by id</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2.1-executions-(string-execution_id)">
+<code class="descname">GET </code><code class="descname">/api/v2.1/executions/</code><span class="sig-paren">(</span><em class="property">string: </em><em>execution_id</em><span class="sig-paren">)</span><a class="headerlink" href="#get--api-v2.1-executions-(string-execution_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get execution by id</p>
+</dd></dl>
+
+<dl class="put">
+<dt id="put--api-v2.1-blueprints-(string-blueprint_id)">
+<code class="descname">PUT </code><code class="descname">/api/v2.1/blueprints/</code><span class="sig-paren">(</span><em class="property">string: </em><em>blueprint_id</em><span class="sig-paren">)</span><a class="headerlink" href="#put--api-v2.1-blueprints-(string-blueprint_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upload a blueprint (id specified)</p>
+</dd></dl>
+
+<dl class="delete">
+<dt id="delete--api-v2.1-blueprints-(string-blueprint_id)">
+<code class="descname">DELETE </code><code class="descname">/api/v2.1/blueprints/</code><span class="sig-paren">(</span><em class="property">string: </em><em>blueprint_id</em><span class="sig-paren">)</span><a class="headerlink" href="#delete--api-v2.1-blueprints-(string-blueprint_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete blueprint by id</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2.1-blueprints-(string-blueprint_id)">
+<code class="descname">GET </code><code class="descname">/api/v2.1/blueprints/</code><span class="sig-paren">(</span><em class="property">string: </em><em>blueprint_id</em><span class="sig-paren">)</span><a class="headerlink" href="#get--api-v2.1-blueprints-(string-blueprint_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get blueprint by id</p>
+</dd></dl>
+
+<dl class="patch">
+<dt id="patch--api-v2.1-snapshots-(string-snapshot_id)">
+<code class="descname">PATCH </code><code class="descname">/api/v2.1/snapshots/</code><span class="sig-paren">(</span><em class="property">string: </em><em>snapshot_id</em><span class="sig-paren">)</span><a class="headerlink" href="#patch--api-v2.1-snapshots-(string-snapshot_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update snapshot status by id</p>
+</dd></dl>
+
+<dl class="delete">
+<dt id="delete--api-v2.1-plugins-(string-plugin_id)">
+<code class="descname">DELETE </code><code class="descname">/api/v2.1/plugins/</code><span class="sig-paren">(</span><em class="property">string: </em><em>plugin_id</em><span class="sig-paren">)</span><a class="headerlink" href="#delete--api-v2.1-plugins-(string-plugin_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete plugin by ID</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2.1-plugins-(string-plugin_id)">
+<code class="descname">GET </code><code class="descname">/api/v2.1/plugins/</code><span class="sig-paren">(</span><em class="property">string: </em><em>plugin_id</em><span class="sig-paren">)</span><a class="headerlink" href="#get--api-v2.1-plugins-(string-plugin_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns plugin by ID</p>
+</dd></dl>
+
+<dl class="patch">
+<dt id="patch--api-v1-node-instances-(string-node_instance_id)">
+<code class="descname">PATCH </code><code class="descname">/api/v1/node-instances/</code><span class="sig-paren">(</span><em class="property">string: </em><em>node_instance_id</em><span class="sig-paren">)</span><a class="headerlink" href="#patch--api-v1-node-instances-(string-node_instance_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update node instance by id.</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v1-node-instances-(string-node_instance_id)">
+<code class="descname">GET </code><code class="descname">/api/v1/node-instances/</code><span class="sig-paren">(</span><em class="property">string: </em><em>node_instance_id</em><span class="sig-paren">)</span><a class="headerlink" href="#get--api-v1-node-instances-(string-node_instance_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get node instance by id</p>
+</dd></dl>
+
+<dl class="patch">
+<dt id="patch--api-v2-node-instances-(string-node_instance_id)">
+<code class="descname">PATCH </code><code class="descname">/api/v2/node-instances/</code><span class="sig-paren">(</span><em class="property">string: </em><em>node_instance_id</em><span class="sig-paren">)</span><a class="headerlink" href="#patch--api-v2-node-instances-(string-node_instance_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update node instance by id.</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2-node-instances-(string-node_instance_id)">
+<code class="descname">GET </code><code class="descname">/api/v2/node-instances/</code><span class="sig-paren">(</span><em class="property">string: </em><em>node_instance_id</em><span class="sig-paren">)</span><a class="headerlink" href="#get--api-v2-node-instances-(string-node_instance_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get node instance by id</p>
+</dd></dl>
+
+<dl class="put">
+<dt id="put--api-v1-deployments-(string-deployment_id)">
+<code class="descname">PUT </code><code class="descname">/api/v1/deployments/</code><span class="sig-paren">(</span><em class="property">string: </em><em>deployment_id</em><span class="sig-paren">)</span><a class="headerlink" href="#put--api-v1-deployments-(string-deployment_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a deployment</p>
+</dd></dl>
+
+<dl class="delete">
+<dt id="delete--api-v1-deployments-(string-deployment_id)">
+<code class="descname">DELETE </code><code class="descname">/api/v1/deployments/</code><span class="sig-paren">(</span><em class="property">string: </em><em>deployment_id</em><span class="sig-paren">)</span><a class="headerlink" href="#delete--api-v1-deployments-(string-deployment_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete deployment by id</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v1-deployments-(string-deployment_id)">
+<code class="descname">GET </code><code class="descname">/api/v1/deployments/</code><span class="sig-paren">(</span><em class="property">string: </em><em>deployment_id</em><span class="sig-paren">)</span><a class="headerlink" href="#get--api-v1-deployments-(string-deployment_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get deployment by id</p>
+</dd></dl>
+
+<dl class="put">
+<dt id="put--api-v2-deployments-(string-deployment_id)">
+<code class="descname">PUT </code><code class="descname">/api/v2/deployments/</code><span class="sig-paren">(</span><em class="property">string: </em><em>deployment_id</em><span class="sig-paren">)</span><a class="headerlink" href="#put--api-v2-deployments-(string-deployment_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a deployment</p>
+</dd></dl>
+
+<dl class="delete">
+<dt id="delete--api-v2-deployments-(string-deployment_id)">
+<code class="descname">DELETE </code><code class="descname">/api/v2/deployments/</code><span class="sig-paren">(</span><em class="property">string: </em><em>deployment_id</em><span class="sig-paren">)</span><a class="headerlink" href="#delete--api-v2-deployments-(string-deployment_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete deployment by id</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2-deployments-(string-deployment_id)">
+<code class="descname">GET </code><code class="descname">/api/v2/deployments/</code><span class="sig-paren">(</span><em class="property">string: </em><em>deployment_id</em><span class="sig-paren">)</span><a class="headerlink" href="#get--api-v2-deployments-(string-deployment_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get deployment by id</p>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--api-v1-executions-(string-execution_id)">
+<code class="descname">POST </code><code class="descname">/api/v1/executions/</code><span class="sig-paren">(</span><em class="property">string: </em><em>execution_id</em><span class="sig-paren">)</span><a class="headerlink" href="#post--api-v1-executions-(string-execution_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply execution action (cancel, force-cancel) by id</p>
+</dd></dl>
+
+<dl class="patch">
+<dt id="patch--api-v1-executions-(string-execution_id)">
+<code class="descname">PATCH </code><code class="descname">/api/v1/executions/</code><span class="sig-paren">(</span><em class="property">string: </em><em>execution_id</em><span class="sig-paren">)</span><a class="headerlink" href="#patch--api-v1-executions-(string-execution_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update execution status by id</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v1-executions-(string-execution_id)">
+<code class="descname">GET </code><code class="descname">/api/v1/executions/</code><span class="sig-paren">(</span><em class="property">string: </em><em>execution_id</em><span class="sig-paren">)</span><a class="headerlink" href="#get--api-v1-executions-(string-execution_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get execution by id</p>
+</dd></dl>
+
+<dl class="post">
+<dt id="post--api-v2-executions-(string-execution_id)">
+<code class="descname">POST </code><code class="descname">/api/v2/executions/</code><span class="sig-paren">(</span><em class="property">string: </em><em>execution_id</em><span class="sig-paren">)</span><a class="headerlink" href="#post--api-v2-executions-(string-execution_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply execution action (cancel, force-cancel) by id</p>
+</dd></dl>
+
+<dl class="patch">
+<dt id="patch--api-v2-executions-(string-execution_id)">
+<code class="descname">PATCH </code><code class="descname">/api/v2/executions/</code><span class="sig-paren">(</span><em class="property">string: </em><em>execution_id</em><span class="sig-paren">)</span><a class="headerlink" href="#patch--api-v2-executions-(string-execution_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update execution status by id</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2-executions-(string-execution_id)">
+<code class="descname">GET </code><code class="descname">/api/v2/executions/</code><span class="sig-paren">(</span><em class="property">string: </em><em>execution_id</em><span class="sig-paren">)</span><a class="headerlink" href="#get--api-v2-executions-(string-execution_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get execution by id</p>
+</dd></dl>
+
+<dl class="put">
+<dt id="put--api-v1-blueprints-(string-blueprint_id)">
+<code class="descname">PUT </code><code class="descname">/api/v1/blueprints/</code><span class="sig-paren">(</span><em class="property">string: </em><em>blueprint_id</em><span class="sig-paren">)</span><a class="headerlink" href="#put--api-v1-blueprints-(string-blueprint_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upload a blueprint (id specified)</p>
+</dd></dl>
+
+<dl class="delete">
+<dt id="delete--api-v1-blueprints-(string-blueprint_id)">
+<code class="descname">DELETE </code><code class="descname">/api/v1/blueprints/</code><span class="sig-paren">(</span><em class="property">string: </em><em>blueprint_id</em><span class="sig-paren">)</span><a class="headerlink" href="#delete--api-v1-blueprints-(string-blueprint_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete blueprint by id</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v1-blueprints-(string-blueprint_id)">
+<code class="descname">GET </code><code class="descname">/api/v1/blueprints/</code><span class="sig-paren">(</span><em class="property">string: </em><em>blueprint_id</em><span class="sig-paren">)</span><a class="headerlink" href="#get--api-v1-blueprints-(string-blueprint_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get blueprint by id</p>
+</dd></dl>
+
+<dl class="put">
+<dt id="put--api-v2-blueprints-(string-blueprint_id)">
+<code class="descname">PUT </code><code class="descname">/api/v2/blueprints/</code><span class="sig-paren">(</span><em class="property">string: </em><em>blueprint_id</em><span class="sig-paren">)</span><a class="headerlink" href="#put--api-v2-blueprints-(string-blueprint_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upload a blueprint (id specified)</p>
+</dd></dl>
+
+<dl class="delete">
+<dt id="delete--api-v2-blueprints-(string-blueprint_id)">
+<code class="descname">DELETE </code><code class="descname">/api/v2/blueprints/</code><span class="sig-paren">(</span><em class="property">string: </em><em>blueprint_id</em><span class="sig-paren">)</span><a class="headerlink" href="#delete--api-v2-blueprints-(string-blueprint_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete blueprint by id</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2-blueprints-(string-blueprint_id)">
+<code class="descname">GET </code><code class="descname">/api/v2/blueprints/</code><span class="sig-paren">(</span><em class="property">string: </em><em>blueprint_id</em><span class="sig-paren">)</span><a class="headerlink" href="#get--api-v2-blueprints-(string-blueprint_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get blueprint by id</p>
+</dd></dl>
+
+<dl class="patch">
+<dt id="patch--api-v2-snapshots-(string-snapshot_id)">
+<code class="descname">PATCH </code><code class="descname">/api/v2/snapshots/</code><span class="sig-paren">(</span><em class="property">string: </em><em>snapshot_id</em><span class="sig-paren">)</span><a class="headerlink" href="#patch--api-v2-snapshots-(string-snapshot_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update snapshot status by id</p>
+</dd></dl>
+
+<dl class="delete">
+<dt id="delete--api-v2-plugins-(string-plugin_id)">
+<code class="descname">DELETE </code><code class="descname">/api/v2/plugins/</code><span class="sig-paren">(</span><em class="property">string: </em><em>plugin_id</em><span class="sig-paren">)</span><a class="headerlink" href="#delete--api-v2-plugins-(string-plugin_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete plugin by ID</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--api-v2-plugins-(string-plugin_id)">
+<code class="descname">GET </code><code class="descname">/api/v2/plugins/</code><span class="sig-paren">(</span><em class="property">string: </em><em>plugin_id</em><span class="sig-paren">)</span><a class="headerlink" href="#get--api-v2-plugins-(string-plugin_id)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns plugin by ID</p>
+</dd></dl>
+
+<dl class="get">
+<dt id="get--static-(path-filename)">
+<code class="descname">GET </code><code class="descname">/static/</code><span class="sig-paren">(</span><em class="property">path: </em><em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#get--static-(path-filename)" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function used internally to send static files from the static
+folder to the browser.</p>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 0.5.</span></p>
+</div>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="relationships.html" title="previous chapter">Built-in Relationships</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/api.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+<h3>Versions</h3>
+<ul>
+    <li><a href="api.html">master</a></li>
+</ul>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, GigaSpaces Technologies Ltd..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/api.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

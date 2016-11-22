@@ -1,0 +1,497 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>HTTP Routing Table &#8212; Cloudify 4.0-alpha1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/banner.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '4.0-alpha1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="Cloudify 4.0-alpha1 documentation" href="index.html" />
+
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+
+    <script type="text/javascript">
+      DOCUMENTATION_OPTIONS.COLLAPSE_INDEX = true;
+    </script>
+
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+
+   <h1>HTTP Routing Table</h1>
+
+   <div class="modindex-jumpbox">
+   <a href="#cap-/api"><strong>/api</strong></a> | 
+   <a href="#cap-/static"><strong>/static</strong></a>
+   </div>
+
+   <table class="indextable modindextable" cellspacing="0" cellpadding="2">
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-/api"><td></td><td>
+       <strong>/api</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v1-blueprints"><code class="xref">GET /api/v1/blueprints</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v1-blueprints-(string-blueprint_id)"><code class="xref">GET /api/v1/blueprints/(string:blueprint_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v1-blueprints-(string-blueprint_id)-archive"><code class="xref">GET /api/v1/blueprints/(string:blueprint_id)/archive</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v1-deployments"><code class="xref">GET /api/v1/deployments</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v1-deployments-(string-deployment_id)"><code class="xref">GET /api/v1/deployments/(string:deployment_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v1-deployments-(string-deployment_id)-outputs"><code class="xref">GET /api/v1/deployments/(string:deployment_id)/outputs</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v1-events"><code class="xref">GET /api/v1/events</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v1-executions"><code class="xref">GET /api/v1/executions</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v1-executions-(string-execution_id)"><code class="xref">GET /api/v1/executions/(string:execution_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v1-node-instances"><code class="xref">GET /api/v1/node-instances</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v1-node-instances-(string-node_instance_id)"><code class="xref">GET /api/v1/node-instances/(string:node_instance_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v1-nodes"><code class="xref">GET /api/v1/nodes</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v1-provider-context"><code class="xref">GET /api/v1/provider/context</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v1-status"><code class="xref">GET /api/v1/status</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v1-tokens"><code class="xref">GET /api/v1/tokens</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v1-version"><code class="xref">GET /api/v1/version</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2.1-blueprints-(string-blueprint_id)"><code class="xref">GET /api/v2.1/blueprints/(string:blueprint_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2.1-blueprints-(string-blueprint_id)-archive"><code class="xref">GET /api/v2.1/blueprints/(string:blueprint_id)/archive</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2.1-deployments-(string-deployment_id)-outputs"><code class="xref">GET /api/v2.1/deployments/(string:deployment_id)/outputs</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2.1-executions-(string-execution_id)"><code class="xref">GET /api/v2.1/executions/(string:execution_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2.1-plugins-(string-plugin_id)"><code class="xref">GET /api/v2.1/plugins/(string:plugin_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2.1-plugins-(string-plugin_id)-archive"><code class="xref">GET /api/v2.1/plugins/(string:plugin_id)/archive</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2.1-provider-context"><code class="xref">GET /api/v2.1/provider/context</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2.1-status"><code class="xref">GET /api/v2.1/status</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2.1-tokens"><code class="xref">GET /api/v2.1/tokens</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2.1-version"><code class="xref">GET /api/v2.1/version</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2-blueprints-(string-blueprint_id)"><code class="xref">GET /api/v2/blueprints/(string:blueprint_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2-blueprints-(string-blueprint_id)-archive"><code class="xref">GET /api/v2/blueprints/(string:blueprint_id)/archive</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2-deployments-(string-deployment_id)"><code class="xref">GET /api/v2/deployments/(string:deployment_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2-deployments-(string-deployment_id)-outputs"><code class="xref">GET /api/v2/deployments/(string:deployment_id)/outputs</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2-executions-(string-execution_id)"><code class="xref">GET /api/v2/executions/(string:execution_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2-node-instances-(string-node_instance_id)"><code class="xref">GET /api/v2/node-instances/(string:node_instance_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2-plugins-(string-plugin_id)"><code class="xref">GET /api/v2/plugins/(string:plugin_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2-plugins-(string-plugin_id)-archive"><code class="xref">GET /api/v2/plugins/(string:plugin_id)/archive</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2-provider-context"><code class="xref">GET /api/v2/provider/context</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2-status"><code class="xref">GET /api/v2/status</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2-tokens"><code class="xref">GET /api/v2/tokens</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--api-v2-version"><code class="xref">GET /api/v2/version</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#post--api-v1-evaluate-functions"><code class="xref">POST /api/v1/evaluate/functions</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#post--api-v1-events"><code class="xref">POST /api/v1/events</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#post--api-v1-executions"><code class="xref">POST /api/v1/executions</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#post--api-v1-executions-(string-execution_id)"><code class="xref">POST /api/v1/executions/(string:execution_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#post--api-v1-provider-context"><code class="xref">POST /api/v1/provider/context</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#post--api-v1-search"><code class="xref">POST /api/v1/search</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#post--api-v2.1-deployment-updates-(string-id)-update-(string-phase)"><code class="xref">POST /api/v2.1/deployment-updates/(string:id)/update/(string:phase)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#post--api-v2.1-evaluate-functions"><code class="xref">POST /api/v2.1/evaluate/functions</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#post--api-v2.1-executions"><code class="xref">POST /api/v2.1/executions</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#post--api-v2.1-executions-(string-execution_id)"><code class="xref">POST /api/v2.1/executions/(string:execution_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#post--api-v2.1-plugins"><code class="xref">POST /api/v2.1/plugins</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#post--api-v2.1-provider-context"><code class="xref">POST /api/v2.1/provider/context</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#post--api-v2.1-search"><code class="xref">POST /api/v2.1/search</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#post--api-v2-evaluate-functions"><code class="xref">POST /api/v2/evaluate/functions</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#post--api-v2-executions"><code class="xref">POST /api/v2/executions</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#post--api-v2-executions-(string-execution_id)"><code class="xref">POST /api/v2/executions/(string:execution_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#post--api-v2-plugins"><code class="xref">POST /api/v2/plugins</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#post--api-v2-provider-context"><code class="xref">POST /api/v2/provider/context</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#post--api-v2-search"><code class="xref">POST /api/v2/search</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#put--api-v1-blueprints-(string-blueprint_id)"><code class="xref">PUT /api/v1/blueprints/(string:blueprint_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#put--api-v1-deployments-(string-deployment_id)"><code class="xref">PUT /api/v1/deployments/(string:deployment_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#put--api-v2.1-blueprints-(string-blueprint_id)"><code class="xref">PUT /api/v2.1/blueprints/(string:blueprint_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#put--api-v2-blueprints-(string-blueprint_id)"><code class="xref">PUT /api/v2/blueprints/(string:blueprint_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#put--api-v2-deployments-(string-deployment_id)"><code class="xref">PUT /api/v2/deployments/(string:deployment_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#delete--api-v1-blueprints-(string-blueprint_id)"><code class="xref">DELETE /api/v1/blueprints/(string:blueprint_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#delete--api-v1-deployments-(string-deployment_id)"><code class="xref">DELETE /api/v1/deployments/(string:deployment_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#delete--api-v2.1-blueprints-(string-blueprint_id)"><code class="xref">DELETE /api/v2.1/blueprints/(string:blueprint_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#delete--api-v2.1-plugins-(string-plugin_id)"><code class="xref">DELETE /api/v2.1/plugins/(string:plugin_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#delete--api-v2-blueprints-(string-blueprint_id)"><code class="xref">DELETE /api/v2/blueprints/(string:blueprint_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#delete--api-v2-deployments-(string-deployment_id)"><code class="xref">DELETE /api/v2/deployments/(string:deployment_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#delete--api-v2-plugins-(string-plugin_id)"><code class="xref">DELETE /api/v2/plugins/(string:plugin_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#patch--api-v1-executions-(string-execution_id)"><code class="xref">PATCH /api/v1/executions/(string:execution_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#patch--api-v1-node-instances-(string-node_instance_id)"><code class="xref">PATCH /api/v1/node-instances/(string:node_instance_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#patch--api-v2.1-executions-(string-execution_id)"><code class="xref">PATCH /api/v2.1/executions/(string:execution_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#patch--api-v2.1-snapshots-(string-snapshot_id)"><code class="xref">PATCH /api/v2.1/snapshots/(string:snapshot_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#patch--api-v2-executions-(string-execution_id)"><code class="xref">PATCH /api/v2/executions/(string:execution_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#patch--api-v2-node-instances-(string-node_instance_id)"><code class="xref">PATCH /api/v2/node-instances/(string:node_instance_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#patch--api-v2-snapshots-(string-snapshot_id)"><code class="xref">PATCH /api/v2/snapshots/(string:snapshot_id)</code></a></td><td>
+       <em></em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-/static"><td></td><td>
+       <strong>/static</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="api.html#get--static-(path-filename)"><code class="xref">GET /static/(path:filename)</code></a></td><td>
+       <em></em></td></tr>
+   </table>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+<h3>Versions</h3>
+<ul>
+    <li><a href="master/http-routingtable.html">master</a></li>
+</ul>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, GigaSpaces Technologies Ltd..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -21,6 +21,7 @@ Contents:
 
     types
     relationships
+    api
 
 
 Indices and tables
