@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Built-in Types &#8212; Cloudify 4.0-alpha1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/banner.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '4.0-alpha1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="Cloudify 4.0-alpha1 documentation" href="index.html" />
+    <link rel="next" title="Built-in Relationships" href="relationships.html" />
+    <link rel="prev" title="Cloudify documentation" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="built-in-types">
+<h1>Built-in Types<a class="headerlink" href="#built-in-types" title="Permalink to this headline">¶</a></h1>
+<dl class="node">
+<dt id="cloudify.nodes.Root">
+<code class="descname">cloudify.nodes.Root</code><a class="headerlink" href="#cloudify.nodes.Root" title="Permalink to this definition">¶</a></dt>
+<dd><p>The root node type which all node types are derived from.</p>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.Compute">
+<code class="descname">cloudify.nodes.Compute</code><a class="headerlink" href="#cloudify.nodes.Compute" title="Permalink to this definition">¶</a></dt>
+<dd><p>things and stuff</p>
+<p>Derived from: <a class="reference internal" href="#cloudify.nodes.Root" title="cloudify.nodes.Root">cloudify.nodes.Root</a></p>
+<p class="rubric">Properties:</p>
+<dl class="docutils">
+<dt>agent_config</dt>
+<dd><p class="first"><strong>default:</strong> {&#8216;install_method&#8217;: &#8216;remote&#8217;, &#8216;port&#8217;: 22}</p>
+<p class="last">Information which will be passed along to the cloudify agent. If <cite>install_method</cite> is set to <cite>none</cite> then the agent will not be installed.</p>
+</dd>
+<dt>ip</dt>
+<dd>The IP address of this Compute node</dd>
+<dt>install_agent</dt>
+<dd><strong>deprecated</strong></dd>
+<dt>cloudify_agent</dt>
+<dd><p class="first"><strong>default:</strong> {}</p>
+<p class="last"><strong>deprecated</strong></p>
+</dd>
+<dt>os_family</dt>
+<dd><p class="first"><strong>default:</strong> linux</p>
+<p class="last">Property specifying what type of operating system family
+this compute node will run.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.Network">
+<code class="descname">cloudify.nodes.Network</code><a class="headerlink" href="#cloudify.nodes.Network" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from: <a class="reference internal" href="#cloudify.nodes.Root" title="cloudify.nodes.Root">cloudify.nodes.Root</a></p>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.Subnet">
+<code class="descname">cloudify.nodes.Subnet</code><a class="headerlink" href="#cloudify.nodes.Subnet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from: <a class="reference internal" href="#cloudify.nodes.Root" title="cloudify.nodes.Root">cloudify.nodes.Root</a></p>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.Port">
+<code class="descname">cloudify.nodes.Port</code><a class="headerlink" href="#cloudify.nodes.Port" title="Permalink to this definition">¶</a></dt>
+<dd><p>An internal reserved IP address.</p>
+<p>Derived from: <a class="reference internal" href="#cloudify.nodes.Root" title="cloudify.nodes.Root">cloudify.nodes.Root</a></p>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.VirtualIP">
+<code class="descname">cloudify.nodes.VirtualIP</code><a class="headerlink" href="#cloudify.nodes.VirtualIP" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from: <a class="reference internal" href="#cloudify.nodes.Root" title="cloudify.nodes.Root">cloudify.nodes.Root</a></p>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.Router">
+<code class="descname">cloudify.nodes.Router</code><a class="headerlink" href="#cloudify.nodes.Router" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from: <a class="reference internal" href="#cloudify.nodes.Root" title="cloudify.nodes.Root">cloudify.nodes.Root</a></p>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.SecurityGroup">
+<code class="descname">cloudify.nodes.SecurityGroup</code><a class="headerlink" href="#cloudify.nodes.SecurityGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from: <a class="reference internal" href="#cloudify.nodes.Root" title="cloudify.nodes.Root">cloudify.nodes.Root</a></p>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.LoadBalancer">
+<code class="descname">cloudify.nodes.LoadBalancer</code><a class="headerlink" href="#cloudify.nodes.LoadBalancer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from: <a class="reference internal" href="#cloudify.nodes.Root" title="cloudify.nodes.Root">cloudify.nodes.Root</a></p>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.FileSystem">
+<code class="descname">cloudify.nodes.FileSystem</code><a class="headerlink" href="#cloudify.nodes.FileSystem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from: <a class="reference internal" href="#cloudify.nodes.Root" title="cloudify.nodes.Root">cloudify.nodes.Root</a></p>
+<p class="rubric">Properties:</p>
+<dl class="docutils">
+<dt>fs_type</dt>
+<dd><p class="first"><strong>required</strong></p>
+<p class="last">The type of the File System. Supported types are [ext2, ext3, ext4, fat, ntfs, swap]</p>
+</dd>
+<dt>use_external_resource</dt>
+<dd><p class="first"><strong>default:</strong> False</p>
+<p class="last">Enables the use of already formatted volumes.</p>
+</dd>
+<dt>fs_mount_path</dt>
+<dd><p class="first"><strong>required</strong></p>
+<p class="last">The path of the mount point.</p>
+</dd>
+<dt>partition_type</dt>
+<dd><p class="first"><strong>default:</strong> 83</p>
+<p class="last">The partition type. 83 is a Linux Native Partition.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.Container">
+<code class="descname">cloudify.nodes.Container</code><a class="headerlink" href="#cloudify.nodes.Container" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from: <a class="reference internal" href="#cloudify.nodes.Compute" title="cloudify.nodes.Compute">cloudify.nodes.Compute</a></p>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.SoftwareComponent">
+<code class="descname">cloudify.nodes.SoftwareComponent</code><a class="headerlink" href="#cloudify.nodes.SoftwareComponent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from: <a class="reference internal" href="#cloudify.nodes.Root" title="cloudify.nodes.Root">cloudify.nodes.Root</a></p>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.ApplicationServer">
+<code class="descname">cloudify.nodes.ApplicationServer</code><a class="headerlink" href="#cloudify.nodes.ApplicationServer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from: <a class="reference internal" href="#cloudify.nodes.SoftwareComponent" title="cloudify.nodes.SoftwareComponent">cloudify.nodes.SoftwareComponent</a></p>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.ApplicationModule">
+<code class="descname">cloudify.nodes.ApplicationModule</code><a class="headerlink" href="#cloudify.nodes.ApplicationModule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from: <a class="reference internal" href="#cloudify.nodes.Root" title="cloudify.nodes.Root">cloudify.nodes.Root</a></p>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.WebServer">
+<code class="descname">cloudify.nodes.WebServer</code><a class="headerlink" href="#cloudify.nodes.WebServer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from: <a class="reference internal" href="#cloudify.nodes.SoftwareComponent" title="cloudify.nodes.SoftwareComponent">cloudify.nodes.SoftwareComponent</a></p>
+<p class="rubric">Properties:</p>
+<dl class="docutils">
+<dt>port</dt>
+<dd><p class="first"><strong>default:</strong> 80</p>
+<p class="last">The network interface port which this WebServer will listen on.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.MessageBusServer">
+<code class="descname">cloudify.nodes.MessageBusServer</code><a class="headerlink" href="#cloudify.nodes.MessageBusServer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from: <a class="reference internal" href="#cloudify.nodes.SoftwareComponent" title="cloudify.nodes.SoftwareComponent">cloudify.nodes.SoftwareComponent</a></p>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.CloudifyManager">
+<code class="descname">cloudify.nodes.CloudifyManager</code><a class="headerlink" href="#cloudify.nodes.CloudifyManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from: <a class="reference internal" href="#cloudify.nodes.SoftwareComponent" title="cloudify.nodes.SoftwareComponent">cloudify.nodes.SoftwareComponent</a></p>
+<p class="rubric">Properties:</p>
+<dl class="docutils">
+<dt>cloudify_packages</dt>
+<dd><p class="first"><strong>required</strong></p>
+<p class="last">Links to Cloudify packages to be installed on the manager</p>
+</dd>
+<dt>cloudify</dt>
+<dd><p class="first"><strong>default:</strong> {&#8216;workflows&#8217;: {&#8216;task_retries&#8217;: -1, &#8216;task_retry_interval&#8217;: 30}, &#8216;cloudify_agent&#8217;: {&#8216;remote_execution_port&#8217;: 22, &#8216;max_workers&#8217;: 5, &#8216;min_workers&#8217;: 2, &#8216;user&#8217;: &#8216;ubuntu&#8217;}, &#8216;policy_engine&#8217;: {&#8216;start_timeout&#8217;: 30}, &#8216;resources_prefix&#8217;: &#8216;&#8217;, &#8216;transient_deployment_workers_mode&#8217;: {&#8216;global_parallel_executions_limit&#8217;: 50, &#8216;enabled&#8217;: True}}</p>
+<p class="last">Configuration for Cloudify Manager</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.DBMS">
+<code class="descname">cloudify.nodes.DBMS</code><a class="headerlink" href="#cloudify.nodes.DBMS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from: <a class="reference internal" href="#cloudify.nodes.SoftwareComponent" title="cloudify.nodes.SoftwareComponent">cloudify.nodes.SoftwareComponent</a></p>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.Database">
+<code class="descname">cloudify.nodes.Database</code><a class="headerlink" href="#cloudify.nodes.Database" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from: <a class="reference internal" href="#cloudify.nodes.Root" title="cloudify.nodes.Root">cloudify.nodes.Root</a></p>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.Volume">
+<code class="descname">cloudify.nodes.Volume</code><a class="headerlink" href="#cloudify.nodes.Volume" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from: <a class="reference internal" href="#cloudify.nodes.Root" title="cloudify.nodes.Root">cloudify.nodes.Root</a></p>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.ObjectStorage">
+<code class="descname">cloudify.nodes.ObjectStorage</code><a class="headerlink" href="#cloudify.nodes.ObjectStorage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from: <a class="reference internal" href="#cloudify.nodes.Root" title="cloudify.nodes.Root">cloudify.nodes.Root</a></p>
+</dd></dl>
+
+<dl class="node">
+<dt id="cloudify.nodes.Tier">
+<code class="descname">cloudify.nodes.Tier</code><a class="headerlink" href="#cloudify.nodes.Tier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from: <a class="reference internal" href="#cloudify.nodes.Root" title="cloudify.nodes.Root">cloudify.nodes.Root</a></p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Cloudify documentation</a></li>
+      <li>Next: <a href="relationships.html" title="next chapter">Built-in Relationships</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/types.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+<h3>Versions</h3>
+<ul>
+    <li><a href="types.html">master</a></li>
+</ul>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, GigaSpaces Technologies Ltd..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/types.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
