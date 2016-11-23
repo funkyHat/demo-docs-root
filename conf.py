@@ -123,7 +123,7 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'sphinxify'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -346,10 +346,10 @@ texinfo_documents = [
 intersphinx_mapping = {
         'python': ('https://docs.python.org/2/', None),
         'gcp':
-        ('file:///Users/matt/Projects/cloudify/gcp-plugin/docs/_build/html/',
+        ('https://funkyhat.github.io/cloudify-gcp-plugin/',
             None),
         'openstack':
-        ('file:///Users/matt/Projects/cloudify/openstack-plugin/docs/_build/html/',
+        ('https://funkyhat.github.io/cloudify-openstack-plugin/',
             None),
     }
 
