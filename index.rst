@@ -6,6 +6,8 @@
 Cloudify documentation
 ======================
 
+This is the main cloudify documentation (or maybe will be...)
+
 Intersphinx tests
 -----------------
 
