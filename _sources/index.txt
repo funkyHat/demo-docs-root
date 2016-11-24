@@ -13,8 +13,6 @@ Testing that the links to external plugins work
 
 :cfy:node:`cloudify.gcp.nodes.Instance`
 
-:cfy:node:`cloudify.openstack.nodes.Server`
-
 
 Contents:
 
